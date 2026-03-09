@@ -11,6 +11,9 @@ body{
   color:#e5e7eb;
   line-height:1.6;
 }
+.image-background{
+  background: url("images/arena.png") center/cover no-repeat fixed;
+}
 
 /* ===== Top Icon ===== */
 .top-icon{
