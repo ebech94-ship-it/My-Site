@@ -22,10 +22,10 @@ body{
 }
 
 .top-icon img{
-  width: 120px;
+  width: 150px;
   height: auto; 
 }
-
+ 
 /* ===== Section Spacing ===== */
 section{
   padding:60px 20px;

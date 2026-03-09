@@ -20,8 +20,7 @@
     <div class="accordion-content">
       <p>Click Download, install the app, accept terms & conditions by thicking the box, sign up, and start practicing or participating in live tournaments. Experience trading like a pro!</p>
     </div>
-    <h1>FOREX TOURNAMENTS ARENA</h1>
-    <h1>APPLICATION</h1>
+    <h1>FOREX TOURNAMENTS ARENA<br>APPLICATION</h1>
   </div>
 </section>
 
@@ -31,7 +30,8 @@
   <div class="accordion">
     <button class="accordion-btn">Tournament Overview</button>
     <div class="accordion-content">
-      <p>Join live Forex tournaments with players worldwide. Practice in demo mode or compete in real cash tournaments. Fun, strategic, and rewarding!</p>
+      <p>Join live Forex tournaments with players worldwide. Practice in demo mode or compete in tournaments.
+         Fun, strategic, and rewarding!</p>
       <img src="images/screenshot.png" alt="App Screenshot" class="screenshot">
     </div>
   </div>
@@ -254,20 +254,48 @@ GodSpeed focuses on transparent systems, clear tournament structures, and balanc
 <div class="godspeed-card">
 <h3>Future Focused</h3>
 <p>
-We are continuously improving Arena to bring new features, better performance, and a stronger competitive community.
+We are continuously improving FX Arena to bring new features, better performance, and a stronger competitive community.
 </p>
 </div>
 
 </div>
 
 </div>
-
 </section>
+
 <!-- Download Section -->
 <section class="hero">
+  <!-- Referral message -->
+  <div id="ref-message" style="text-align:center; font-weight:bold; margin-bottom:10px;"></div>
+
+  <!-- Heading -->
   <h1>FOREX TOURNAMENTS ARENA DOWNLOAD</h1>
-  <p>Compete Globally. Become a Champion. Win Real Cash. Rule the Market/Lead the competitions.</p>
-  <a href="app-release.apk" class="btn">Download Android App</a>
+
+  <!-- Description -->
+  <p>Compete Globally. Become a Champion. Win Real Cash. Rule the Market, lead the competitions.</p>
+
+  <!-- Download button -->
+  <a id="download-btn" href="app-release.apk" class="btn">Download Android App</a>
+
+  <!-- Referral script -->
+  <script>
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const ref = params.get('ref');
+      if (ref) localStorage.setItem('inviteRef', ref);
+
+      const storedRef = localStorage.getItem('inviteRef');
+      if (storedRef) {
+        // Show referral message
+        const refDiv = document.getElementById('ref-message');
+        if (refDiv) refDiv.textContent = `🎉 You were invited by ${storedRef}! Start your journey now.`;
+
+        // Update download button link
+        const downloadBtn = document.getElementById('download-btn');
+        if (downloadBtn) downloadBtn.href = `app-release.apk?ref=${storedRef}`;
+      }
+    })();
+  </script>
 </section>
 
 <section class="risk-warning">
@@ -290,19 +318,33 @@ We are continuously improving Arena to bring new features, better performance, a
 </footer>
 
 <script>
+// Accordion
 const accBtns = document.querySelectorAll(".accordion-btn");
 accBtns.forEach(btn => {
   btn.addEventListener("click", () => {
     btn.classList.toggle("active");
     const content = btn.nextElementSibling;
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
+    content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
   });
 });
-</script>
 
+// Referral tracking
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const ref = params.get('ref');
+  if (ref) localStorage.setItem('inviteRef', ref);
+
+  const storedRef = localStorage.getItem('inviteRef');
+  if (storedRef) {
+    // Display message above download button
+    const refDiv = document.getElementById('ref-message');
+    if (refDiv) refDiv.textContent = `🎉 You were invited by ${storedRef}! Start your journey now.`;
+
+    // Update download button
+    const downloadBtn = document.getElementById('download-btn');
+    if (downloadBtn) downloadBtn.href = `app-release.apk?ref=${storedRef}`;
+  }
+})();
+</script>
 </body>
 </html>
