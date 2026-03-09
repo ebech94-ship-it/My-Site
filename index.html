@@ -13,52 +13,254 @@
     <img src="images/icon.png" alt="FX Arena App Icon">
   </div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>FOREX TOURNAMENTS</h1>
-    <p>Compete Globally. Become a Champion. Win Real Cash. Rule the Market.</p>
-    <a href="app-release.apk" class="btn">Download Android App</a>
-  </section>
+<!-- Getting Started -->
+<section class="features">
+  <div class="accordion">
+    <button class="accordion-btn">Getting Started</button>
+    <div class="accordion-content">
+      <p>Click Download, install the app, accept terms & conditions by thicking the box, sign up, and start practicing or participating in live tournaments. Experience trading like a pro!</p>
+    </div>
+    <h1>FOREX TOURNAMENTS ARENA</h1>
+    <h1>APPLICATION</h1>
+  </div>
+</section>
 
-  <!-- Features / Tournament Info -->
-  <section class="features">
-    <h2>How FX Arena Works</h2>
-    <div class="accordion">
-      <button class="accordion-btn">Tournament Overview</button>
-      <div class="accordion-content">
-        <p>Join live Forex tournaments with players worldwide. Practice in demo mode or compete in real cash tournaments. Fun, strategic, and rewarding!</p>
-        <img src="images/screenshot.png" alt="App Screenshot" class="screenshot">
+<!-- How It Works -->
+<section class="features">
+  <h2>How FX Arena Works</h2>
+  <div class="accordion">
+    <button class="accordion-btn">Tournament Overview</button>
+    <div class="accordion-content">
+      <p>Join live Forex tournaments with players worldwide. Practice in demo mode or compete in real cash tournaments. Fun, strategic, and rewarding!</p>
+      <img src="images/screenshot.png" alt="App Screenshot" class="screenshot">
+    </div>
+  </div>
+</section>
+
+
+<!-- About -->
+<section class="about">
+  <div class="about-container">
+    <h2>About FX Arena</h2>
+    <p class="mission">
+      FX Arena is a competitive Forex tournament platform designed to test
+      strategy, discipline, and market psychology in a simulated trading environment.
+    </p>
+
+    <div class="info-grid">
+
+      <div class="info-card">
+        <h3>Demo Tournaments</h3>
+        <p>
+          Practice your strategies in risk-free demo competitions.
+          Learn market timing, improve discipline, and build confidence.
+        </p>
       </div>
 
-      <button class="accordion-btn">Getting Started</button>
-      <div class="accordion-content">
-        <p>Click Download, install the app, accept terms & conditions by thicking the box, sign up, and start practicing or participating in live tournaments. Experience trading like a pro!</p>
+      <div class="info-card">
+        <h3>Live Tournaments</h3>
+        <p>
+          Compete against real players in structured trading challenges.
+          Rankings are determined by performance and consistency.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>Registration & Entry</h3>
+        <p>
+          Registration on FX Arena is completely free.
+          Demo tournaments are free to join.
+          Selected premium live tournaments may require an entry fee
+          based on the prize pool structure.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>Prize Distribution</h3>
+        <p>
+          Top-ranked participants receive tournament rewards
+          based on predefined rules and leaderboard standings.
+          Participants with the highest final tournament account balance
+          qualify for prize pool distribution.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEW: Participation Flow -->
+<section class="about">
+  <div class="about-container">
+    <h2>How To Participate</h2>
+    <div class="info-grid">
+
+      <div class="info-card">
+        <h3>1. Register</h3>
+        <p>
+          Download the app, create your account, and complete your profile information.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>2. Fund Wallet</h3>
+        <p>
+          Deposit into your Real Account using available payment methods.
+          Premium tournament entry fees are deducted from this balance.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>3. Join Tournament</h3>
+        <p>
+          Select an available tournament and register.
+          A dedicated tournament balance is assigned to you
+          with equal starting conditions for all participants.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>4. Climb Rankings</h3>
+        <p>
+          Trade strategically to grow your tournament balance.
+          Higher balances improve your position on the leaderboard.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEW: Live Stats -->
+<section class="about">
+  <div class="about-container">
+    <h2>Platform Activity</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Active Players</h3>
+        <p>250+ traders currently participating.</p>
+      </div>
+      <div class="info-card">
+        <h3>Total Tournaments Played</h3>
+        <p>1,000+ tournaments completed.</p>
+      </div>
+      <div class="info-card">
+        <h3>Prize Pools Distributed</h3>
+        <p>$5,000+ rewards allocated.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact / Footer -->
-  <footer>
-    <h3>Contact Us</h3>
-    <p><span>📧</span> Email: <a href="mailto:ebech94@gmail.com">ebech94@gmail.com</a></p>
-    <p><span>📱</span> WhatsApp: <a href="https://wa.me/237682783789" target="_blank">+237-682-783-789</a></p>
-    <p>&copy; 2026 FX Arena. All rights reserved.</p>
-  </footer>
+<!-- Psychology -->
+<section class="psychology">
+  <div class="psychology-container">
+    <h2>Understanding Market Psychology</h2>
+    <p class="highlight">Market Psychology Matters</p>
+    <p>The market is driven by human emotion — fear, greed, hope, and uncertainty.</p>
+    <p>Traders buy when they anticipate price growth(rise) and sell when they expect decline(fall).</p>
+    <p>In FX Arena tournaments, strategy, discipline, and timing determine success.</p>
+  </div>
+</section>
 
-  <script>
-    // Simple Accordion for feature sections
-    const accBtns = document.querySelectorAll(".accordion-btn");
-    accBtns.forEach(btn => {
-      btn.addEventListener("click", () => {
-        btn.classList.toggle("active");
-        const content = btn.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    });
-  </script>
+<!-- NEW: Leaderboard Preview -->
+<section class="about">
+  <div class="about-container">
+    <h2>Top Tournament Leaders</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>1. Trader Alpha</h3>
+        <p>Return: +32%</p>
+      </div>
+      <div class="info-card">
+        <h3>2. Trader Beta</h3>
+        <p>Return: +28%</p>
+      </div>
+      <div class="info-card">
+        <h3>3. Trader Gamma</h3>
+        <p>Return: +25%</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW: Testimonials -->
+<section class="about">
+  <div class="about-container">
+    <h2>User Feedback</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <p>"FX Arena helped me practice trading without real risk. Great competitive environment!"</p>
+        <strong>- Early User</strong>
+      </div>
+      <div class="info-card">
+        <p>"The leaderboard competition keeps me disciplined and focused."</p>
+        <strong>- Demo Participant</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW: FAQ -->
+<section class="features">
+  <h2>Frequently Asked Questions</h2>
+  <div class="accordion">
+    <button class="accordion-btn">Is this real-money trading?</button>
+    <div class="accordion-content">
+      <p>No. FX Arena provides simulated trading competitions only.</p>
+    </div>
+
+    <button class="accordion-btn">How are winners determined?</button>
+    <div class="accordion-content">
+      <p>Rankings are based on trading performance and consistency during tournaments.</p>
+    </div>
+
+    <button class="accordion-btn">How do I join a tournament?</button>
+    <div class="accordion-content">
+      <p>Register, fund your wallet, and select an available tournament.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Download Section -->
+<section class="hero">
+  <h1>FOREX TOURNAMENTS ARENA DOWNLOAD</h1>
+  <p>Compete Globally. Become a Champion. Win Real Cash. Rule the Market/Lead the competitions.</p>
+  <a href="app-release.apk" class="btn">Download Android App</a>
+</section>
+
+<section class="risk-warning">
+  <p>
+    ⚠️ FX Arena provides simulated trading competitions.
+    No real-money trading is executed nor broker services provided. Trade responsibly.
+  </p>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="terms.html">Terms & Conditions</a> |
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+  <h3>Contact Us</h3>
+  <p><span>📧</span> Email: <a href="mailto:ebech94@gmail.com">ebech94@gmail.com</a></p>
+  <p><span>📱</span> WhatsApp: <a href="https://wa.me/237682783789" target="_blank">+237-682-783-789</a></p>
+  <p>&copy; 2026 FX Arena. All rights reserved.</p>
+</footer>
+
+<script>
+const accBtns = document.querySelectorAll(".accordion-btn");
+accBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("active");
+    const content = btn.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+});
+</script>
+
 </body>
 </html>
